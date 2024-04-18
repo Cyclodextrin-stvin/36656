@@ -1,0 +1,10 @@
+import time
+
+def focus_timer(duration):
+    print("专注时钟启动，持续 {} 分钟。".format(duration))
+    time.sleep(duration * 60)
+    print("专注时间到！")
+
+if __name__ == "__main__":
+    focus_duration = int(input("请输入专注时长（单位：分钟）："))
+    focus_timer(focus_duration)
